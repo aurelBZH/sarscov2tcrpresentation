@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="reveal.js/css/reset.css">
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
 		<link rel="stylesheet" href="reveal.js/css/theme/moon.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/custom.css">
+
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="reveal.js/lib/css/monokai.css">
@@ -26,53 +28,69 @@
 		<div class="reveal">
 			<div class="slides">
 				<section> 
-					<h2> Low-Avidity CD4+ T Cell Responses to SARS-CoV-2 in Unexposed Individuals and Humans with Severe COVID-19</h2>	 
-					// <img width="600" height="238" data-src="asset/graphicalabstract.jpg" alt=" graphical abstract">
+					<h3> Low-Avidity CD4+ T Cell Responses to SARS-CoV-2 in Unexposed Individuals and Humans with Severe COVID-19</h3>	 
+					 <img width="500" height="500" data-src="asset/graphicalabstract.jpg" alt=" graphical abstract">
 					
 				</section>
 				<section>
+					<section>
+						<h3>introduction</h3>
+						<ul>
+							<li>COVID-19 displays remarkable disparity of clinical symptoms</li>
+							<li>CD4+ T cells are central organizers of anti-viral immune responses</li>
+							<li>COVID-19 patients seem to develop robust Th1-like SARS-CoV-2-specific CD4+ T cell responses focused on spike, membrane, and nucleocapsid proteins (Grifoni et al., 2020)</li>
+						</ul>
+
+					</section>
+					<section>
+						<h3>introduction</h3>
+						<ul>
+							<li>Increased frequencies of SARS-CoV-2-specific CD4+ and CD8+ T cells are found in severe disease in some (Anft et al., 2020), but not in other studies (Braun et al., 2020).</li>
+							<li>Several studies show that a significant fraction of un-exposed donors possess SARS-CoV-2-reactive CD4+ memory T cells</li>
+							<li>These memory T cells exhibit cross-reactivity against selected peptides with homology to related common cold corona virus (CCCoV)</li>
+						</ul>
+					</section>
 				<section>
-					<h3>tranSMART</h3>
-						how to leverage multiple data type ?					
-							<img width="500" height="400" data-src="asset/etricks_datatype.png" alt="transimmunome datatype">
-							<p style="font-size:14px"> Gu et al, 2019 : Data and knowledge management in translational research: implementation of the eTRIKS platform for the IMI OncoTrack consortium</p>	
+					<h3>introduction</h3>
+					<ul class="fragment">
+						<li>What types of immune responses to SARS-CoV-2 are protective and which are detrimental ?</li>
+						<li>Does exaggerated or dysfunctional CD4+ T cell responses contribute to the observed hyperinflammation in severe COVID-19 patients ?</li>
+						<li>What are the factors determining the magnitude as well as the quality of the CD4+ T cell response and and how this relates to predisposition and/or manifestation of severe COVID-19?</li>
+					</ul>
+
+				</section>
 			
+
+				
 				</section>
 				<section>
-					<h3>tranSMART</h3>
-					how to leverage multiple data type ?
-					<p class="fragment"><img width="600" height="500" data-src="asset/tm_datatype.png" alt="transimmunome datatype"></p>
+					<h3>subject</h3>
+					<p align="left">antigen-specific T cell enrichment to characterize SARS-CoV-2-specific T cells</p>
+					<ul>
+						<li>healthy donors (n = 55)</li>
+						<li>COVID-19 patients (n = 56)</li>
+					</ul>
+					<p align="left">including their avidity and clonality as well as their cross-reactivity to CCCoV and other viruses</p>
 				</section>
 
 				<section>
-				 <h5> how to promote cooperation between professional with different background ? </h5>
-					<ul class="fragment">
-						<li>biologists/ immunologists</li>
-						<li>clinicians</li>
-						<li>bioinformaticians</li>
-						<li>Data managers</li>
-					</ul>
+					<section><h2>Results</h2></section>
+					<section>
+						<h3>what are the target proteins of the  SARS-CoV-2-reactive T cells ?</h3>
+						<p align="left">T cells reactive against a panel of 12 different SARS-CoV-2 proteins. SARS-CoV-2-reactive CD4+ T cells were detected based on the upregulation of CD154+ (CD40L) after 7 h ex vivo stimulation of PBMC</p>
+					</section>
+					<section>
+						<h3>what are the target proteins of the  SARS-CoV-2-reactive T cells ?</h3>
+						<img class="fragment" src="asset/sarscovprot.png" alt="reactive cells against sarscov prot">
+						<img class="fragment" src="asset/exemplefc1.jpg" alt="reactive cells against sarscov prot">
+
+					</section>
+					<section><h3>is there more </h3>
+						<img src="asset/covidvsunexposed.jpg" alt="reactive cells against sarscov prot">
+
+					</section>
+				<section>
 				
-				</section>
-				</section>
-				<section>
-						<h3> What is tranSMART ?</h3>
-						<p> a knowledge management plateform for biomedical research :</p>
-						<ul>
-							<li id="item" class="fragment" >a database </li>
-						<img class="myImg" style="display:none;" width="500" height="400" data-src="asset/etricks_datatype.png" alt="transimmunome datatype">
-							<li class="fragment">an ETL plateform</li>
-							<li class="fragment">a graphical interface</li>
-							<li class="fragment">a data analysis plateform (exploratory analysis)</li>		
-						</ul>
-						
-				</section>
-				<section>
-				<section>
-					<h3>Case report</h3>
-					<h5>Data and knowledge management in translational research: implementation
-						 of the eTRIKS platform for the IMI OncoTrack consortium</h5>
-						 <p style="font-size:14px">Gu et al, 2019</p>
 				</section>
 
 				<section>
@@ -243,7 +261,7 @@
 						of cancer pathogenesis, the disease remains one of the world's major medical problems.
 						New therapies and diagnostic procedures to guide their clinical application are urgently 
 						required. OncoTrack, a consortium between industry and academia, supported by the Innovative
-						 Medicines Initiative, signifies a new era in personalized medicine, which synthesizes current technological advances in omics techniques, systems biology approaches, and mathematical modeling. A truly personalized molecular imprint of the tumor micro‐environment and subsequent diagnostic and therapeutic insight is gained, with the ultimate goal of matching the “right” patient to the “right” drug and identifying predictive biomarkers for clinical application. This comprehensive mapping of the colon cancer molecular landscape in tandem with crucial, clinical functional annotation for systems biology analysis provides unprecedented insight and predictive power for colon cancer management. Overall, we show that major biotechnological developments in tandem with changes in clinical thinking have laid the foundations for the OncoTrack approach and the future clinical application
+						 Medicines Initiative, signifies a new era in personalized medicine, which synthesizes current technological advances in omics techniques, systems biology approaches, and mathematical modeling. A truly personalized molecular imprint of the tumor micro‐environment and subsequent diagnostic and therapeutic insight is gained, with the ultimate goal of matching the “right” patient to the “right” drug and identifying predictive biomarkers for clinical application. This comprehensive mapping of the colon cancer molecular landscape in tandem with crucial, clinical functional annotation for systems biology analysis provides unprecedented insight and predictive power for colon cancer management. Overall, we show that major biotechnological developments in tandem with changes in clinical thinking have laid the foundations for the OncoTrack approach and the future clinical application ?
 						 of a truly personalized approach to colon cancer theranostics.</p>
 				</section>
 			</div>
